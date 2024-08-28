@@ -1,12 +1,12 @@
 [package]
-name = "my-token-program"
+name = "my-token-project"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "my_token_program"
+name = "my_token_project"
 
 [features]
 default = []
@@ -18,5 +18,7 @@ idl-build = ["anchor-lang/idl-build"]
 
 [dependencies]
 anchor-lang = "0.30.1"
-solana-program = "1.18.22"
-spl-token = "3.3.0"
+anchor-spl = "0.30.1"
+solana-program = "1.18.17"
+spl-token = { version = "3.3.0", default-features = false }
+
